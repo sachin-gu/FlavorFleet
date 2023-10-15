@@ -21,6 +21,9 @@ const reducer = (state, action) => {
                 return arr
             })
             return arr
+        case "DROP":
+            let empArray = []
+            return empArray 
         default:
                 console.log("Error in Reducer");
     }
@@ -31,7 +34,7 @@ export const CartProvider = ({children})=>{
     const [state,dispach] = useReducer(reducer,[]);
 return(
 <CartDispachContext.Provider value={dispach}>
-    <CartStateContext.Provider value={state}>
+    <CartStateContext.Provider value={state}> 
         {children}
     </CartStateContext.Provider>
 </CartDispachContext.Provider>

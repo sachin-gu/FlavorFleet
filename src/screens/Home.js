@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
+import Chatbot from "../screens/Chatbot";
 
 // import { Link } from "react-router-dom";
 
@@ -60,7 +61,7 @@ export default function Home() {
                     </div>
                     <div className="carousel-item">
                         <img
-                            src="https://source.unsplash.com/random/900×700/?barbeque"
+                            src="https://source.unsplash.com/random/900×700/?pizza"
                             className="d-block w-100" style={{ filter: "brigtness(30%)" }}
                             alt="..."
                         />
@@ -119,6 +120,7 @@ export default function Home() {
         </div>
   
       <div>
+        <Chatbot/>
         <Footer />
       </div>
     </div>

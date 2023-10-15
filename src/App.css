@@ -36,3 +36,64 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Chatbot */
+
+/* Add your own CSS styles here */
+.chatbot-container {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-messages {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.message {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user {
+  background-color: #007BFF;
+  color: #fff;
+  text-align: right;
+}
+
+.bot {
+  background-color: #eee;
+  color: #333;
+  text-align: left;
+}
+
+.chatbot-input {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}

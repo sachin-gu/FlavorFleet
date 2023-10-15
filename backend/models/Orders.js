@@ -10,6 +10,8 @@ const OrderSchema = new Schema({
     },
     order_data:{
         type: Array,
-        required:true
-    }
+        required:true,
+    },
 })
+
+module.exports = mongoose.model('order',OrderSchema)

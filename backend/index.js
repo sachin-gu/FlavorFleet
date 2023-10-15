@@ -20,6 +20,7 @@ app.get('/', (req, res) => {
 app.use(express.json())
 app.use('/api',require('./routes/CreateUsers'))
 app.use('/api',require('./routes/DisplayData'))
+app.use('/api',require('./routes/OrderData'))
 
 mongoDb()
 app.listen(port, () => {

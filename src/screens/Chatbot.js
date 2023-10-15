@@ -8,7 +8,7 @@ class Chatbot extends Component {
       messages: [],
       userInput: '',
     };
-    this.apiKey = 'YOUR_OPENAI_API_KEY'; // Replace with your API key
+    this.apiKey = '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'; // Replace with your API key
   }
 
   handleUserInput = (e) => {
@@ -24,10 +24,10 @@ class Chatbot extends Component {
       userInput: '',
     });
 
-    // Call the AI service (OpenAI GPT-3)
+    // Call the AI service (GPT-4)
     try {
       const response = await axios.post(
-        'https://api.openai.com/v1/engines/davinci-codex/completions',
+        'https://api.openai.com/v1/engines/text-davinci-002/completions', // Replace with the correct GPT-4 endpoint
         {
           prompt: userInput,
           max_tokens: 50, // Adjust the number of tokens as needed
